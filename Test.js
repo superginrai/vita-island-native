@@ -30,7 +30,6 @@ export default class FetchExample extends React.Component {
     }
 
     const searchAPI = (searchGame) => {
-      // return fetch('https://api-endpoint.igdb.com/games/1942?fields=*', {
       return fetch(`https://api-endpoint.igdb.com/games/?search=${searchGame}&fields=*`, {
         headers: {
           "user-key": "72bb7ce60b4626f158199825d65f9ffc",
@@ -74,7 +73,6 @@ export default class FetchExample extends React.Component {
           color="#841584"
           accessibilityLabel="Learn more about this purple button"
         />
-        {/* <Text>Huh</Text> */}
       </View>
     );
   }
